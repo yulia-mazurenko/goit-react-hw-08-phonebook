@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { Field, Formik, Form } from 'formik';
+import { Field, Formik } from 'formik';
 import * as yup from 'yup';
 import { nanoid } from 'nanoid';
 
