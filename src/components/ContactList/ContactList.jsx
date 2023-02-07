@@ -31,15 +31,6 @@ const ContactList = () => {
       </ul>
 
       {isLoading && <Spinner />}
-
-      {/*isLoading && {<Stack direction='row' spacing={4}>
-  <Spinner size='xs' />
-  <Spinner size='sm' />
-  <Spinner size='md' />
-  <Spinner size='lg' />
-  <Spinner size='xl' />
-</Stack>} */}
-
       {error && <Error />}
     </>
   );

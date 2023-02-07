@@ -56,6 +56,7 @@ const contactsSlice = createSlice({
     builder
       .addCase(fetchContacts.fulfilled, fetchContactsSuccessReducer)
       .addCase(addContact.fulfilled, addContactSuccessReducer)
+
       .addCase(deleteContact.fulfilled, deleteContactSuccessReducer)
       .addMatcher(isAnyOf(...getActions('pending')), pendingReducer)
       .addMatcher(isAnyOf(...getActions('rejected')), rejectedReducer)

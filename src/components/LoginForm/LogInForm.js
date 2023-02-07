@@ -26,6 +26,7 @@ const LogInForm = () => {
       justifyContent="center"
       onSubmit={handleSubmit}
       autoComplete="off"
+      pt={4}
       as="form"
     >
       <Box
@@ -37,7 +38,14 @@ const LogInForm = () => {
         as="label"
       >
         Email
-        <Input type="email" name="email" placeholder="Enter your email" />
+        <Input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          w="300px"
+          size="sm"
+          borderColor="rgba(238, 238, 8, 1)"
+        />
       </Box>
       <Box
         display="flex"
@@ -53,9 +61,18 @@ const LogInForm = () => {
           name="password"
           placeholder="Enter your password"
           w="300px"
+          size="sm"
+          borderColor="rgba(238, 238, 8, 1)"
         />
       </Box>
-      <Button type="submit" mr="auto" ml="auto">
+      <Button
+        type="submit"
+        colorScheme="yellow"
+        mt={2}
+        ml="auto"
+        mr="auto"
+        w="150px"
+      >
         LogIn
       </Button>
     </Box>

@@ -27,6 +27,7 @@ export const RegisterForm = () => {
       justifyContent="center"
       onSubmit={handleSubmit}
       autoComplete="off"
+      pt={4}
       as="form"
     >
       <Box
@@ -39,7 +40,13 @@ export const RegisterForm = () => {
         as="label"
       >
         Username
-        <Input type="text" name="name" placeholder="Enter your name" />
+        <Input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          size="sm"
+          borderColor="rgba(238, 238, 8, 1)"
+        />
       </Box>
       <Box
         display="flex"
@@ -51,7 +58,13 @@ export const RegisterForm = () => {
         as="label"
       >
         Email
-        <Input type="email" name="email" placeholder="Enter your email" />
+        <Input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          size="sm"
+          borderColor="rgba(238, 238, 8, 1)"
+        />
       </Box>
       <Box
         display="flex"
@@ -67,9 +80,18 @@ export const RegisterForm = () => {
           type="password"
           name="password"
           placeholder="Enter your password"
+          size="sm"
+          borderColor="rgba(238, 238, 8, 1)"
         />
       </Box>
-      <Button type="submit" mr="auto" ml="auto">
+      <Button
+        type="submit"
+        colorScheme="yellow"
+        mt={2}
+        ml="auto"
+        mr="auto"
+        w="150px"
+      >
         Register
       </Button>
     </Box>

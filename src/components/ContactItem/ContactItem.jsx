@@ -14,15 +14,21 @@ const ContactItem = ({ contactName, number, id }) => {
       <ListItem
         display="flex"
         alignItems="center"
-        justify-content="space-between"
+        justifyContent="space-between"
       >
-        <Box display="flex" alignItems="center" gap={3}>
-          <Avatar bg="yellow.200" size={'xs'} />
+        <Box
+          display="flex"
+          alignItems="center"
+          justifyContent="space-between"
+          gap={3}
+        >
+          <Avatar bg="yellow.300" size={'xs'} />
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <p>{contactName}:</p>
             <p>{number}</p>
           </div>
         </Box>
+
         <Button
           type="button"
           variant="ghost"
@@ -30,10 +36,7 @@ const ContactItem = ({ contactName, number, id }) => {
           rightIcon={<DeleteIcon />}
           cursor="pointer"
           onClick={() => dispatch(deleteContact(id))}
-        >
-          {/* <DeleteIcon boxSize={6} w={8} h={8} color="red.500" /> */}
-          {/* <AiFillDelete width="20px" height="20px" /> */}
-        </Button>
+        ></Button>
       </ListItem>
     </List>
   );
@@ -46,21 +49,3 @@ ContactItem.propTypes = {
   number: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
 };
-
-// export const ListItem = styled.li`
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   width: ${p => p.theme.sizes.wrapper};
-//   color: ${p => p.theme.colors.secondary};
-// `;
-
-// export const DeleteButton = styled.button`
-//   color: ${p => p.theme.colors.accentColor};
-//   transform: scale(1);
-
-//   &:hover,
-//   &:focus {
-//     transform: scale(1.2);
-//   }
-// `;

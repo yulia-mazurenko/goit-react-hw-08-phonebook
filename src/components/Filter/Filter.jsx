@@ -11,15 +11,18 @@ const Filter = () => {
     <Box
       display="flex"
       flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
-      w="300px"
+      alignItems="flex-start"
+      justifyContent="space-around"
+      gap={2}
+      w="200px"
       as="label"
     >
-      Find contacts by name
+      Find contacts by name:
       <Input
         type="text"
+        size="sm"
         value={filter}
+        borderColor="rgba(238, 238, 8, 1)"
         onChange={e => dispatch(filterContacts(e.currentTarget.value))}
       />
     </Box>

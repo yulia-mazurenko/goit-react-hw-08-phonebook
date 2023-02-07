@@ -12,8 +12,8 @@ export const AppBar = () => {
       as="header"
       py={4}
       px={5}
-      backgroundColor={'#7688d2'}
-      w="500px"
+      backgroundColor={'rgba(66, 153, 225, 0.6)'}
+      w="600px"
       mr="auto"
       ml="auto"
     >

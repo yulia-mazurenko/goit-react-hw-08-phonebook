@@ -1,23 +1,25 @@
 import { Box, Heading } from '@chakra-ui/react';
-// import image from '../../src/bgimage.png';
+import bgImg from '../bgimage.jpg';
 
 export const HomePage = () => {
   return (
     <Box
       as="div"
-      w="500px"
+      w="600px"
       h="200px"
       mr="auto"
       ml="auto"
       display="flex"
       alignItems="center"
       justifyContent="center"
+      style={{ backgroundImage: `url("${bgImg}")` }}
+      backgroundPosition="center"
+      backgroundRepeat="no-repeat"
+      backgroundSize="cover"
     >
-      {/* <image /> */}
-      <Heading size="lg">
-        We greeting you on the main page of the phonebook application
+      <Heading size="lg" textAlign="center">
+        We greeting you on the main page of the phonebook application:)
       </Heading>
     </Box>
   );
 };
-//backgroundImage="url('../images/bgimage.png')"

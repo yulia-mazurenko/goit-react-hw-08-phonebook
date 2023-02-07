@@ -3,11 +3,11 @@ import { useDispatch } from 'react-redux';
 import { Field, Formik } from 'formik';
 import * as yup from 'yup';
 import { nanoid } from 'nanoid';
+import { Button } from '@chakra-ui/react';
 
 import FormError from './FormError';
-import MaskedInput from 'react-text-mask';
 import { addContact } from '../../redux/features/contacts/contactsOperations';
-import { Box, Button, Input } from '@chakra-ui/react';
+import { FormStyle, Label, Input, InputNumber } from './ContactForm.styled';
 
 const phoneNumberMask = [
   '(',
@@ -39,7 +39,7 @@ const initialValues = {
   number: '',
 };
 
-export default function ContactForm() {
+export default function ContactForm({ onClose }) {
   const contactId = nanoid();
   const contactNumberIid = nanoid();
   const dispatch = useDispatch();
@@ -53,6 +53,7 @@ export default function ContactForm() {
     dispatch(addContact({ ...values, name: uppercaseName }));
 
     resetForm();
+    onClose();
   };
 
   return (
@@ -61,27 +62,10 @@ export default function ContactForm() {
       validationSchema={schema}
       onSubmit={handleFormSubmit}
     >
-      <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="center"
-        gap={3}
-        as="form"
-      >
-        <Box
-          htmlFor={contactId}
-          display="flex"
-          flexDirection="column"
-          alignItems="flex-start"
-          justifyContent="center"
-          gap={2}
-          as="label"
-        >
+      <FormStyle>
+        <Label htmlFor={contactId}>
           Name
           <Input
-            size="sm"
-            w="300px"
             placeholder="John Snow"
             type="text"
             name="name"
@@ -91,29 +75,12 @@ export default function ContactForm() {
             required
           />
           <FormError name="name" />
-        </Box>
-        <Box
-          htmlFor={contactNumberIid}
-          display="flex"
-          flexDirection="column"
-          alignItems="flex-start"
-          justifyContent="center"
-          gap={2}
-          w="300px"
-          as="label"
-        >
+        </Label>
+        <Label htmlFor={contactNumberIid}>
           Number
           <Field name="number">
             {({ field }) => (
-              <MaskedInput
-                style={{
-                  width: '300px',
-                  height: '32px',
-                  outline: '0.8px solid yellow',
-                  paddingLeft: '12px',
-                  paddingRight: '12px',
-                  borderRadius: '2px',
-                }}
+              <InputNumber
                 id={contactNumberIid}
                 required
                 type="tel"
@@ -124,9 +91,18 @@ export default function ContactForm() {
             )}
           </Field>
           <FormError name="number" />
-        </Box>
-        <Button type="submit">Add contact</Button>
-      </Box>
+        </Label>
+        <Button
+          type="submit"
+          colorScheme="yellow"
+          mt={2}
+          ml="auto"
+          mr="auto"
+          w="150px"
+        >
+          Save contact
+        </Button>
+      </FormStyle>
     </Formik>
   );
 }
