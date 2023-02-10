@@ -1,7 +1,7 @@
 import { Card, CardBody, Heading, Stack } from '@chakra-ui/react';
 import { RegisterForm } from 'components/RegisterForm/RegisterForm';
 
-export const RegisterPage = () => {
+const RegisterPage = () => {
   return (
     <Card w="600px" maxW="600px" boxShadow="md" mr="auto" ml="auto" pb={4}>
       <CardBody padding="12px">
@@ -18,3 +18,5 @@ export const RegisterPage = () => {
     </Card>
   );
 };
+
+export default RegisterPage;

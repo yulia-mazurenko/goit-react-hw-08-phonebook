@@ -24,7 +24,7 @@ export const notificationsMiddleware =
         );
         setTimeout(() => {
           dispatch(hideNotifications());
-        }, 3000);
+        }, 2000);
         next(action);
         return;
       }
@@ -36,7 +36,7 @@ export const notificationsMiddleware =
         );
         setTimeout(() => {
           dispatch(hideNotifications());
-        }, 3000);
+        }, 2000);
         dispatch({ type: 'contacts/addContact/rejected' });
         return;
       }
@@ -50,7 +50,7 @@ export const notificationsMiddleware =
         );
         setTimeout(() => {
           dispatch(hideNotifications());
-        }, 3000);
+        }, 2000);
         dispatch({ type: 'contacts/addContact/rejected' });
 
         return;
@@ -68,7 +68,7 @@ export const notificationsMiddleware =
       );
       setTimeout(() => {
         dispatch(hideNotifications());
-      }, 3000);
+      }, 2000);
     }
 
     if (action.type === 'auth/login/fulfilled') {
@@ -77,14 +77,14 @@ export const notificationsMiddleware =
 
       setTimeout(() => {
         dispatch(hideNotifications());
-      }, 3000);
+      }, 2000);
     } else if (action.type === 'auth/login/rejected') {
       dispatch(addNotifications(`Login is unsuccessful :(  Try again)`));
       dispatch(changeColorNotification('rgb(227, 42, 73,  60%)'));
 
       setTimeout(() => {
         dispatch(hideNotifications());
-      }, 3000);
+      }, 2000);
     }
 
     if (action.type === 'auth/register/fulfilled') {
@@ -93,14 +93,14 @@ export const notificationsMiddleware =
 
       setTimeout(() => {
         dispatch(hideNotifications());
-      }, 3000);
+      }, 2000);
     } else if (action.type === 'auth/register/rejected') {
       dispatch(addNotifications(`Register is unsuccessful :(  Try again)`));
       dispatch(changeColorNotification('rgb(227, 42, 73,  60%)'));
 
       setTimeout(() => {
         dispatch(hideNotifications());
-      }, 3000);
+      }, 2000);
     }
 
     next(action);

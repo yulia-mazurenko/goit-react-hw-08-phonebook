@@ -1,7 +1,7 @@
 import { Box, Heading } from '@chakra-ui/react';
 import bgImg from '../bgimage.jpg';
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <Box
       as="div"
@@ -23,3 +23,5 @@ export const HomePage = () => {
     </Box>
   );
 };
+
+export default HomePage;

@@ -1,7 +1,7 @@
 import { Card, CardBody, Heading, Stack } from '@chakra-ui/react';
 import LoginForm from 'components/LoginForm';
 
-export const LogInPage = () => {
+const LogInPage = () => {
   return (
     <Card w="600px" maxW="600px" boxShadow="md" mr="auto" ml="auto" pb={4}>
       <CardBody padding="12px">
@@ -18,3 +18,5 @@ export const LogInPage = () => {
     </Card>
   );
 };
+
+export default LogInPage;

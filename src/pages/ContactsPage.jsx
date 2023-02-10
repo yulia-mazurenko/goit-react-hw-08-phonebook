@@ -1,12 +1,19 @@
-import { Box, Card, Heading, Text } from '@chakra-ui/react';
+import { Box, Button, Card, Heading, Text } from '@chakra-ui/react';
 import ContactList from '../components/ContactList/ContactList';
 import Filter from 'components/Filter';
 import { ModalWindow } from 'components/Modal/Modal';
 import { useSelector } from 'react-redux';
 import { selectFilteredContacts } from 'redux/features/contacts/selectors';
+import { useState } from 'react';
+import { BsPersonPlus } from 'react-icons/bs';
 
-export const ContactsPage = () => {
+const ContactsPage = () => {
   const filteredFriends = useSelector(selectFilteredContacts);
+  const [isShownModal, setIsShownModal] = useState(false);
+
+  const toggleModal = () => {
+    setIsShownModal(!isShownModal);
+  };
 
   return (
     <>
@@ -36,7 +43,20 @@ export const ContactsPage = () => {
           mt={3}
           gap={5}
         >
-          <ModalWindow />
+          <Button
+            type="button"
+            onClick={toggleModal}
+            colorScheme="yellow"
+            mt={2}
+            ml="auto"
+            mr="auto"
+            w="180px"
+            gap="8px"
+          >
+            <BsPersonPlus />
+            <Text>Add new contact</Text>
+          </Button>
+          {isShownModal && <ModalWindow onToggle={toggleModal} />}
           <Filter />
         </Box>
 
@@ -61,3 +81,5 @@ export const ContactsPage = () => {
     </>
   );
 };
+
+export default ContactsPage;

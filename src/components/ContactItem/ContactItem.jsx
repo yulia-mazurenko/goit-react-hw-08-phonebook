@@ -1,7 +1,6 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Avatar, Box, Button, List, ListItem } from '@chakra-ui/react';
-
 import { DeleteIcon } from '@chakra-ui/icons';
 
 import { deleteContact } from '../../redux/features/contacts/contactsOperations';
@@ -23,10 +22,14 @@ const ContactItem = ({ contactName, number, id }) => {
           gap={3}
         >
           <Avatar bg="yellow.300" size={'xs'} />
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent="space-between"
+          >
             <p>{contactName}:</p>
             <p>{number}</p>
-          </div>
+          </Box>
         </Box>
 
         <Button

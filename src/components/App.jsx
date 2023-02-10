@@ -1,17 +1,18 @@
-import { HomePage } from 'pages/HomePage';
-import { RegisterPage } from 'pages/RegisterPage';
-import { LogInPage } from '../pages/LogInPage';
 import { Route, Routes } from 'react-router-dom';
-import { ContactsPage } from 'pages/ContactsPage';
 import { Layout } from './Layout/Layout';
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
+import { lazy, useEffect } from 'react';
 import { refreshUser } from 'redux/features/auth/authOperations';
 import { useAuth } from 'hooks/useAuth';
 import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
 import { Notifications } from './Notifications/Notification';
 import { selectVisibleNotification } from 'redux/features/notifications/selectors';
+
+const HomePage = lazy(() => import('../pages/HomePage'));
+const RegisterPage = lazy(() => import('../pages/RegisterPage'));
+const LogInPage = lazy(() => import('../pages/LogInPage'));
+const ContactsPage = lazy(() => import('../pages/ContactsPage'));
 
 export default function App() {
   const dispatch = useDispatch();
