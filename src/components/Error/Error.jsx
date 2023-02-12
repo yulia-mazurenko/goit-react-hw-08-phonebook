@@ -1,11 +1,13 @@
+import { BackDrop } from 'components/Notifications/Notifications.styled';
+
 export const Error = () => {
   return (
-    <div>
+    <BackDrop>
       <p>
         Something went wrong :(
         <br />
         Try again
       </p>
-    </div>
+    </BackDrop>
   );
 };
