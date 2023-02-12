@@ -1,14 +1,7 @@
 import styled from '@emotion/styled';
 
 export const BackDrop = styled.div`
-  /* @media screen and (max-width: 320px) {
-    width: 320px;
-  }
-
-  @media screen and (min-width: 321px) {
-    width: 100%;
-  } */
-  /* width: 100%; */
+  width: 100%;
   position: absolute;
   display: flex;
   align-items: center;
