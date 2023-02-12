@@ -1,4 +1,4 @@
-import { Box, Button, Card, Heading, Text } from '@chakra-ui/react';
+import { Box, Button, Heading, Text } from '@chakra-ui/react';
 import ContactList from '../components/ContactList/ContactList';
 import Filter from 'components/Filter';
 import { ModalWindow } from 'components/Modal/Modal';
@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { selectFilteredContacts } from 'redux/features/contacts/selectors';
 import { useState } from 'react';
 import { BsPersonPlus } from 'react-icons/bs';
+import { Delimiter, WrapperContactsCard } from './Pages.styled';
 
 const ContactsPage = () => {
   const filteredFriends = useSelector(selectFilteredContacts);
@@ -20,20 +21,8 @@ const ContactsPage = () => {
       <Heading size="lg" textAlign="center" pt={2} pb={4}>
         PhoneBook
       </Heading>
-      <hr
-        style={{ border: '1px solid rgba(66, 153, 225, 0.6)', width: '100%' }}
-      />
-      <Card
-        display="flex"
-        flexDirection="row"
-        alignItems="center"
-        justifyContent="space-around"
-        w="600px"
-        boxShadow="lg"
-        borderTopRadius="0"
-        px={4}
-        gap={3}
-      >
+      <Delimiter />
+      <WrapperContactsCard>
         <Box
           display="flex"
           flexDirection="column"
@@ -77,7 +66,7 @@ const ContactsPage = () => {
 
           <ContactList />
         </Box>
-      </Card>
+      </WrapperContactsCard>
     </>
   );
 };

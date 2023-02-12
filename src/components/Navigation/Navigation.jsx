@@ -1,12 +1,12 @@
 import { useAuth } from 'hooks/useAuth';
-import { Box, Heading } from '@chakra-ui/react';
-import { NavItem } from './Navigation.styled';
+import { Heading } from '@chakra-ui/react';
+import { NavItem, Wrapper } from './Navigation.styled';
 
 const Navigation = () => {
   const { isLoggedIn } = useAuth();
 
   return (
-    <Box as="nav" display="flex" alignItems="center" gridGap={4}>
+    <Wrapper as="nav" display="flex" alignItems="center" gridGap={3}>
       <NavItem
         to="/"
         className={({ isActive }) => (isActive ? '.active' : undefined)}
@@ -25,7 +25,7 @@ const Navigation = () => {
           </Heading>
         </NavItem>
       )}
-    </Box>
+    </Wrapper>
   );
 };
 

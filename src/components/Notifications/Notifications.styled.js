@@ -1,17 +1,20 @@
 import styled from '@emotion/styled';
 
 export const BackDrop = styled.div`
-  @media screen and (max-width: 479px) {
-    position: fixed;
-    width: 600px;
+  /* @media screen and (max-width: 320px) {
+    width: 320px;
   }
+
+  @media screen and (min-width: 321px) {
+    width: 100%;
+  } */
+  /* width: 100%; */
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
   z-index: 99;
-  width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   right: 0;
   margin-right: auto;
@@ -20,6 +23,18 @@ export const BackDrop = styled.div`
 `;
 
 export const MessageWrapper = styled.div`
+  @media screen and (max-width: 320px) {
+    width: 250px;
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 479px) {
+    width: 250px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 400px;
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;

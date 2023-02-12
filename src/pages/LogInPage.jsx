@@ -1,9 +1,10 @@
-import { Card, CardBody, Heading, Stack } from '@chakra-ui/react';
+import { CardBody, Heading, Stack } from '@chakra-ui/react';
 import LoginForm from 'components/LoginForm';
+import { Delimiter, WrapperCard } from './Pages.styled';
 
 const LogInPage = () => {
   return (
-    <Card w="600px" maxW="600px" boxShadow="md" mr="auto" ml="auto" pb={4}>
+    <WrapperCard mr="auto" ml="auto" pb={4}>
       <CardBody padding="12px">
         <Stack spacing="3">
           <Heading size="md" textAlign="center">
@@ -11,11 +12,9 @@ const LogInPage = () => {
           </Heading>
         </Stack>
       </CardBody>
-      <hr
-        style={{ border: '1px solid rgba(66, 153, 225, 0.6)', width: '100%' }}
-      />
+      <Delimiter />
       <LoginForm />
-    </Card>
+    </WrapperCard>
   );
 };
 

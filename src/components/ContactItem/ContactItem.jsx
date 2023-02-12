@@ -4,6 +4,7 @@ import { Avatar, Box, Button, List, ListItem } from '@chakra-ui/react';
 import { DeleteIcon } from '@chakra-ui/icons';
 
 import { deleteContact } from '../../redux/features/contacts/contactsOperations';
+import { ContactData } from './ContactItem.styled';
 
 const ContactItem = ({ contactName, number, id }) => {
   const dispatch = useDispatch();
@@ -27,8 +28,8 @@ const ContactItem = ({ contactName, number, id }) => {
             alignItems="center"
             justifyContent="space-between"
           >
-            <p>{contactName}:</p>
-            <p>{number}</p>
+            <ContactData>{contactName}:</ContactData>
+            <ContactData>{number}</ContactData>
           </Box>
         </Box>
 
