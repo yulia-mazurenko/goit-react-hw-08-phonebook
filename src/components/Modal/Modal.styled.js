@@ -17,7 +17,7 @@ export const ModalBackDrop = styled.div`
   right: 0;
   margin-right: auto;
   margin-left: auto;
-  background-color: rgb(190 197 203 / 88%); ;
+  background-color: rgb(190 197 203 / 88%);
 `;
 
 export const Modal = styled.div`

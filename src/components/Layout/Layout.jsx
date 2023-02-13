@@ -9,7 +9,6 @@ export const Layout = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
-      // outline="1px solid rgba(66, 153, 225, 0.6)"
       ml="auto"
       mr="auto"
     >

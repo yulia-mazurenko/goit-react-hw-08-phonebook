@@ -1,18 +1,18 @@
 import styled from '@emotion/styled';
 
 export const BackDrop = styled.div`
-  width: 100%;
   position: absolute;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 99;
-  height: 100%;
+  height: 105%;
   top: 0;
   right: 0;
   margin-right: auto;
   margin-left: auto;
-  background-color: rgb(190 197 203 / 88%); ;
+  background-color: rgb(224 229 233 / 88%);
 `;
 
 export const MessageWrapper = styled.div`
