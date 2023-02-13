@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.b4d860c2.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.3e2759a4.js",
     "static/js/693.dd4b1970.chunk.js": "/goit-react-hw-08-phonebook/static/js/693.dd4b1970.chunk.js",
     "static/js/281.e419f39a.chunk.js": "/goit-react-hw-08-phonebook/static/js/281.e419f39a.chunk.js",
     "static/js/146.2076b1f8.chunk.js": "/goit-react-hw-08-phonebook/static/js/146.2076b1f8.chunk.js",
-    "static/js/115.a505f753.chunk.js": "/goit-react-hw-08-phonebook/static/js/115.a505f753.chunk.js",
+    "static/js/115.88bd1564.chunk.js": "/goit-react-hw-08-phonebook/static/js/115.88bd1564.chunk.js",
     "static/js/652.f5bad5ab.chunk.js": "/goit-react-hw-08-phonebook/static/js/652.f5bad5ab.chunk.js",
     "static/js/538.11bd8d15.chunk.js": "/goit-react-hw-08-phonebook/static/js/538.11bd8d15.chunk.js",
     "static/media/bgimage.jpg": "/goit-react-hw-08-phonebook/static/media/bgimage.8f98a84a7cffd669ef43.jpg",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
-    "main.b4d860c2.js.map": "/goit-react-hw-08-phonebook/static/js/main.b4d860c2.js.map",
+    "main.3e2759a4.js.map": "/goit-react-hw-08-phonebook/static/js/main.3e2759a4.js.map",
     "693.dd4b1970.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/693.dd4b1970.chunk.js.map",
     "281.e419f39a.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/281.e419f39a.chunk.js.map",
     "146.2076b1f8.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/146.2076b1f8.chunk.js.map",
-    "115.a505f753.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/115.a505f753.chunk.js.map",
+    "115.88bd1564.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/115.88bd1564.chunk.js.map",
     "652.f5bad5ab.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/652.f5bad5ab.chunk.js.map",
     "538.11bd8d15.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/538.11bd8d15.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b4d860c2.js"
+    "static/js/main.3e2759a4.js"
   ]
 }
