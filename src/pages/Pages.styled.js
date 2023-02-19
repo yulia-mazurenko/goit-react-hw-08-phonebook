@@ -6,7 +6,10 @@ export const WrapperCard = styled(Card)`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 0px 4px 1px rgba(66, 153, 225, 0.6);
+  /* box-shadow: 0px 4px 1px rgba(66, 153, 225, 0.6); */
+  box-shadow: 0px 17px 24px 5px rgba(66, 153, 225, 0.6);
+  -webkit-box-shadow: 0px 17px 24px 5px rgba(66, 153, 225, 0.6);
+  -moz-box-shadow: 0px 17px 24px 5px rgba(66, 153, 225, 0.6);
 
   @media screen and (max-width: 320px) {
     width: 320px;
@@ -27,7 +30,9 @@ export const WrapperContactsCard = styled(Card)`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 0px 4px 1px rgba(66, 153, 225, 0.6);
+  box-shadow: 0px 17px 24px 5px rgba(66, 153, 225, 0.6);
+  -webkit-box-shadow: 0px 17px 24px 5px rgba(66, 153, 225, 0.6);
+  -moz-box-shadow: 0px 17px 24px 5px rgba(66, 153, 225, 0.6);
 
   @media screen and (max-width: 320px) {
     flex-direction: column;
