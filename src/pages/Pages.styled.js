@@ -6,8 +6,7 @@ export const WrapperCard = styled(Card)`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 4px 1px rgba(66, 153, 225, 0.6);
 
   @media screen and (max-width: 320px) {
     width: 320px;
@@ -28,8 +27,7 @@ export const WrapperContactsCard = styled(Card)`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 4px 1px rgba(66, 153, 225, 0.6);
 
   @media screen and (max-width: 320px) {
     flex-direction: column;
