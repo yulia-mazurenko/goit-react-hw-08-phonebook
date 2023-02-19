@@ -1,7 +1,20 @@
 import styled from '@emotion/styled';
 
 export const Header = styled.header`
-  background-color: rgba(66, 153, 225, 0.6);
+  background-image: radial-gradient(
+    at center,
+    rgba(66, 153, 225, 0.6) 10%,
+    rgb(17 104 124 / 94%) 20%,
+    rgba(66, 153, 225, 0.6) 30%,
+    rgb(17 104 124 / 94%) 40%,
+    rgba(66, 153, 225, 0.6) 50%,
+    rgb(17 104 124 / 94%) 60%,
+    rgba(66, 153, 225, 0.6) 70%,
+    rgb(17 104 124 / 94%) 80%,
+    rgba(66, 153, 225, 0.6) 90%,
+    rgb(17 104 124 / 94%)
+  );
+
   margin-right: auto;
   margin-left: auto;
   padding-top: 20px;
